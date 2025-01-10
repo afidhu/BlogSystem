@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 import os
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SOCIAL_MEDIAL_PLATFORM.settings')
+# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SOCIAL_MEDIAL_PLATFORM.settings')
 
-application = get_wsgi_application()
+# application = get_wsgi_application()
 
 
 
@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'CORE',
 ]
+
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
