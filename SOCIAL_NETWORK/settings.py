@@ -18,8 +18,19 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(os.payh.join(BASE_DIR, 'env'))
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
+
+
+import os
+from django.core.wsgi import get_wsgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SOCIAL_MEDIAL_PLATFORM.settings')
+
+application = get_wsgi_application()
+
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-q38!=twd(ws4)=@d6)e_5tk-^-k()$hk#+7izd6p1#)mj!ny=0'
