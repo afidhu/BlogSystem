@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 import os
-from django.core.wsgi import get_wsgi_application
+# from django.core.wsgi import get_wsgi_application
 
 # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'SOCIAL_MEDIAL_PLATFORM.settings')
 
